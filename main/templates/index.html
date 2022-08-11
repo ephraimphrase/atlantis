@@ -1,0 +1,278 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="probootstrap-slider flexslider">
+    <ul class="slides">
+       <li style="background-image: url('img/o2arena.jpg');" class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="probootstrap-slider-text text-center">
+                            <p><img src="{% static 'img/curve_white.svg' %}" class="seperator probootstrap-animate" alt="Free HTML5 Bootstrap Template"></p>
+                            <h1 class="probootstrap-heading probootstrap-animate">Welcome to Atlantis</h1>
+                            <div class="probootstrap-animate probootstrap-sub-wrap"> Atlantis is the ideal destination for any occasion, be it a business meeting or a special event. We offer an extensive range of options to cater to your needs.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li style="background-image: url('img/concert.jpg');" class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="probootstrap-slider-text text-center">
+                            <p><img src="{% static 'img/curve_white.svg' %}" class="seperator probootstrap-animate" alt="Free HTML5 Bootstrap Template"></p>
+                            <h1 class="probootstrap-heading probootstrap-animate">Enjoy Luxury Experience</h1>
+                            <div class="probootstrap-animate probootstrap-sub-wrap"> The best of both worlds: Comfort and luxury. The quality you deserve, without the hassle.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+<section class="probootstrap-cta probootstrap-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="probootstrap-cta-heading">Reserve a hall for your event or function <span> &mdash;   Our spacious and elegant Atlantis hall is the perfect location for your event.</span></h2>
+                <div class="probootstrap-cta-button-wrap"><a href="{% url 'reservation' %}" class="btn btn-primary">Reserve now</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="probootstrap-section">
+    <div class="container">
+        <div class="row mb30">
+            <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                <h2>Explore our Services</h2>
+                <p class="lead"> We offer a variety of services to fit your needs, including food service, transportation and more.</p>
+                <p><img src="{% static 'img/curve.svg' %}" class="svg" alt="Free HTML5 Bootstrap Template"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service left-icon probootstrap-animate">
+                    <div class="icon">
+                        <img src="{% static 'img/flaticon/svg/001-building.svg' %}" class="svg" alt="Free HTML5 Bootstrap Template by uicookies.com">
+                    </div>
+                    <div class="text">
+                        <h3>40,000 seater capacity</h3>
+                        <p>The Atlantis is an amazingly comfortable venue with 40,000 capacity and is equipped with the latest audio-visual equipment to make your function run like clockwork.</p>
+                        <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service left-icon probootstrap-animate">
+                    <div class="icon">
+                        <img src="{% static 'img/flaticon/svg/003-restaurant.svg' %}" class="svg" alt="Free HTML5 Bootstrap Template by uicookies.com">
+                    </div>
+                    <div class="text">
+                        <h3>Food &amp; Drinks</h3>
+                        <p>Atlantis offers catering services for events of any size. We pride ourselves on providing high-quality food & drink for our clients.</p>
+                        <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service left-icon probootstrap-animate">
+                    <div class="icon">
+                        <img src="{% static 'img/flaticon/svg/004-parking.svg' %}" class="svg" alt="Free HTML5 Bootstrap Template by uicookies.com">
+                    </div>
+                    <div class="text">
+                        <h3>Transportation for Guests</h3>
+                        <p>Your event transportation provider. We can provide a wide range of drop-off, pick up, and transportation options designed to fit your specific needs.</p>
+                        <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="probootstrap-section probootstrap-section-dark">
+    <div class="container">
+        <div class="row mb30">
+            <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                <h2>Event Halls</h2>
+                <p class="lead"> Atlantis is a one-of-a-kind luxury event venue that features healthy, open, and flexible event spaces with multiple available event halls. Our ability to increase or shrink their event function space for special events is unparalleled among other venues in the area.</p>
+                <p><img src="{% static 'img/curve.svg' %}" class="svg" alt="Free HTML5 Bootstrap Template"></p>
+            </div>
+        </div>
+        <div class="row probootstrap-gutter10">
+            <div class="col-md-6">
+                <div class="probootstrap-block-image-text">
+                    <figure>
+                        <a href="{% static 'img/event.jpg' %}" class="image-popup">
+                            <img src="{% static 'img/event.jpg' %}" alt="Free HTML5 Bootstrap Template by uicookies.com" class="img-responsive">
+                        </a>
+                        <div class="actions">
+                            <a href="https://vimeo.com/45830194" class="popup-vimeo"><i class="icon-play2"></i></a>
+                        </div>
+                    </figure>
+                    <div class="text">
+                        <h3><a href="#">Deluxe Hall</a></h3>
+                        <div class="post-meta">
+                            <ul>
+                                <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                                <li><i class="icon-user2"></i> 3 Guests</li>
+                            </ul>
+                        </div>
+                        <p> A deluxe hall the perfect place for concerts, parties and so on. Hire this hall to your next event and get maximum space at minimum price.</p>
+                        <p><a href="{% url 'reservation' %}" class="btn btn-primary">Book now</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="probootstrap-block-image-text">
+                    <figure>
+                        <a href="{% static 'img/table.jpg' %}" class="image-popup">
+                            <img src="{% static 'img/table.jpg' %}" alt="Free HTML5 Bootstrap Template by uicookies.com" class="img-responsive">
+                        </a>
+                        <div class="actions">
+                            <a href="https://vimeo.com/45830194" class="popup-vimeo"><i class="icon-play2"></i></a>
+                        </div>
+                    </figure>
+                    <div class="text">
+                    <h3><a href="#">Grand Hall</a></h3>
+                        <div class="post-meta">
+                            <ul>
+                                <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                                <li><i class="icon-user2"></i> 3 Guests</li>
+                            </ul>
+                        </div>
+                        <p> Our new grand hall is perfect to host receptions, dinners and like events. This hall comes with a stunning decorative ceiling and beautiful aesthetic.</p>
+                        <p><a href="{% url 'reservation' %}" class="btn btn-primary">Book now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="probootstrap-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 probootstrap-relative">
+                <h3 class="mt0 mb30">Event Highlights</h3>
+                <ul class="probootstrap-owl-navigation absolute right">
+                    <li><a href="#" class="probootstrap-owl-prev"><i class="icon-chevron-thin-left"></i></a></li>
+                    <li><a href="#" class="probootstrap-owl-next"><i class="icon-chevron-thin-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 probootstrap-relative">
+                <div class="owl-carousel owl-carousel-carousel">
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="{% static 'img/wedding.jpg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                            <div class="text">
+                                <h3>Wedding</h3>
+                                <p>Starting from <strong>$29.00/Night</strong></p>
+                                <div class="post-meta">
+                                    <ul>
+                                        <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                                        <li><i class="icon-user2"></i> 3 Guests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="{% static 'img/birthday.jpg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                            <div class="text">
+                                <h3>Birthday Party</h3>
+                                <p>Starting from <strong>$32.00/Night</strong></p>
+                                <div class="post-meta">
+                                    <ul>
+                                        <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                                        <li><i class="icon-user2"></i> 3 Guests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="{% static 'img/graduation.jpg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                            <div class="text">
+                                <h3>Graduation Ceremony</h3>
+                                <p>Starting from <strong>$42.00/Night</strong></p>
+                                <div class="post-meta">
+                                    <ul>
+                                        <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                                        <li><i class="icon-user2"></i> 3 Guests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="{% static 'img/concert-1.jpg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                            <div class="text">
+                                <h3>Concert</h3>
+                                <p>Starting from <strong>$29.00/Night</strong></p>
+                                <div class="post-meta">
+                                    <ul>
+                                        <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                                        <li><i class="icon-user2"></i> 3 Guests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="{% static 'img/conference.jpg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                            <div class="text">
+                                <h3>Conference</h3>
+                                <p>Starting from <strong>$32.00/Night</strong></p>
+                                <div class="post-meta">
+                                    <ul>
+                                        <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                                        <li><i class="icon-user2"></i> 3 Guests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="{% static 'img/dinner.jpg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                            <div class="text">
+                                <h3>Dinner</h3>
+                                <p>Starting from <strong>$42.00/Night</strong></p>
+                                <div class="post-meta">
+                                    <ul>
+                                        <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                                        <li><i class="icon-user2"></i> 3 Guests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="{% static 'img/exhibition.jpg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                            <div class="text">
+                                <h3>Exhibition</h3>
+                                <p>Starting from <strong>$42.00/Night</strong></p>
+                                <div class="post-meta">
+                                    <ul>
+                                        <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                                        <li><i class="icon-user2"></i> 3 Guests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
