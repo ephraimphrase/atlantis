@@ -367,13 +367,15 @@
                                                     <th>Date</th>
                                                     <th>Hall</th>
                                                     <th>Status</th>
+                                                    <th>Edit</th>
+                                                    <th>Delete</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 {% if events %}
                                                 {% for event in events %}
                                                 <tr>
-                                                    <td><span class="name">{{event.owner_first_name}} {{event.owner_last_name}}</span> </td>
+                                                    <td><span class="name">{{event.owner_first_name}} {{event.owner_last_name}}</span></td>
                                                     <td><span class="product">{{event.name}}</span> </td>
                                                     <td><span>{{event.date}}</span></td>
                                                     <td>{{event.hall}}</td>
